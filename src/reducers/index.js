@@ -1,10 +1,10 @@
-import matchResult from './matchResult'
+import favmatch from './favmatch'
 import player from './player'
 import top10 from './top10'
-import dogs from './Get_alldogs'
+import dogs from './dogs'
 
 export default {
-  matchResult,
+  favmatch,
   player,
   top10,
   dogs

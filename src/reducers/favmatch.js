@@ -1,4 +1,4 @@
-import {FETCHED_GETALL_DOG} from '../actions/top10'
+import {FETCHED_GETALL_DOG} from '../actions/favmatch'
 
 const initialState = []
 

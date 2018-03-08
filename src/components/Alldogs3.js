@@ -5,9 +5,9 @@ import { fetchRandomDog } from '../actions/showAllDog'
 
 
 
-class AllDogs extends React.Component {
+class AllDogs3 extends React.Component {
   static propTypes = {
-    fetchRandomDog: PropTypes.func.isRequired
+      fetchRandomDog: PropTypes.func.isRequired
   }
 
   componentWillMount() {
@@ -15,15 +15,14 @@ class AllDogs extends React.Component {
   }
 
   render() {
-    const {randomDog} = this.props
-
-    if (!randomDog) return null
+    const {RandomDog} = this.props
 
     return (
       <div>
-        <img className="doggy_picture" src= { randomDog }
+        <img className="doggy_picture" src= { RandomDog }
          alt="first_dog_picture" />
       </div>
+
     )
   }
 }
@@ -31,8 +30,8 @@ class AllDogs extends React.Component {
 
 const mapStateToProps = function (state) {
   return {
-    randomDog: state.dogs[0]
+    RandomDog: state.dogs[3]
   }
 }
 
-export default connect(mapStateToProps, { fetchRandomDog })(AllDogs)
+export default connect(mapStateToProps, { fetchRandomDog })(AllDogs3)

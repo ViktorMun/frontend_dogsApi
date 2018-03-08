@@ -1,10 +1,10 @@
-import {FETCHED_GETALL_DOG} from '../actions/top10'
+import {FETCHED_RANDOM_DOG} from '../actions/showAllDog'
 
 const initialState = []
 
 export default (state = initialState, { type, payload } = {}) => {
     switch (type) {
-      case FETCHED_GETALL_DOG:
+      case FETCHED_RANDOM_DOG:
         return state.concat(payload)
       default:
         return state

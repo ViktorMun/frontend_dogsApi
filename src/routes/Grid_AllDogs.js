@@ -1,17 +1,20 @@
 import React from 'react';
-import { Responsive, WidthProvider } from 'react-grid-layout';
+import AllDogs from '../components/Alldogs'
+import AllDogs1 from '../components/Alldogs1'
+import AllDogs2 from '../components/Alldogs2'
+import AllDogs3 from '../components/Alldogs3'
+import AllDogs4 from '../components/Alldogs4'
+import AllDogs5 from '../components/Alldogs5'
+import UpButton from '../components/thumbsUpButton'
+import DownButton from '../components/thumbsDownButton'
+
 import './Styles.css';
 
 
 
-const ResponsiveReactGridLayout = WidthProvider(Responsive);
-
-
 export default class Grid_AllDogs extends React.Component {
-
   render() {
     return (
-
       <div>
       <div style={{backgroundColor: "#f9f4f7", overflow: "scroll", color: 'black'}}
                  key={"b"}
@@ -22,158 +25,90 @@ export default class Grid_AllDogs extends React.Component {
                          h: 2,
                          minW: 2,
                          maxW: 4}}>
-            <div class="wrapper">
-              <div class="home">
-                <div class="home_inner">
-                  <div class="home_articles">
-                    <div class="articles">
-                      <div class="articles_inner">
-                        <ul class="articles_list clear">
-                        <li class="articles_item">
-                            <article class="articles_contents">
-                              <div class="articles_header">
-                                <h1 class="articles_title">
-                                  <a href="/2017/11/20/develope/">dddd</a> </h1>
-                                  <div class="articles_meta">
-                                    <div class="meta">
-                                      <div class="meta_inner ellipsis">
-                                        <div class="meta_datetime">
-                                          <i class="fa fa-clock-o" aria-hidden="true">
-                                          </i>
-                                          <time datetime="2017-11-20">2017.11.20</time>
-                                      </div>
-                                      <div class="meta_categories">
-                                        <i class="fa fa-map-marker" aria-hidden="true">
-                                        </i>
-                                        <div class="meta_category-list">
-                                            <a href="#" class="meta_category-list-item">concept</a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="articles_body">
-                              <div class="contents">
-                                <div class="contents_inner">
-                                  <p>asdsad</p>
+            <div className="wrapper">
+              <div className="home">
+                <div className="home_inner">
+                  <div className="home_articles">
+                    <div className="articles">
+                      <div className="articles_inner">
+                        <ul className="articles_list clear">
+                        <li className="articles_item">
+                          <article className="articles_contents">
+                            <div className="articles_body">
+                              <div className="contents">
+                                <div className="contents_inner">
+                                  <AllDogs />
+                                  <UpButton />
+                                  <DownButton />
                                 </div>
                               </div>
                             </div>
                           </article>
                         </li>
-                        <li class="articles_item">
-                            <article class="articles_contents">
-                              <div class="articles_header">
-                                <h1 class="articles_title">
-                                  <a href="/2017/11/20/develope/">asdasd</a> </h1>
-                                  <div class="articles_meta">
-                                    <div class="meta">
-                                      <div class="meta_inner ellipsis">
-                                        <div class="meta_datetime">
-                                          <i class="fa fa-clock-o" aria-hidden="true">
-                                          </i>
-                                          <time datetime="2017-11-20">2017.11.20</time>
-                                      </div>
-                                      <div class="meta_categories">
-                                        <i class="fa fa-map-marker" aria-hidden="true">
-                                        </i>
-                                        <div class="meta_category-list">
-                                            <a href="#" class="meta_category-list-item">concept</a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="articles_body">
-                              <div class="contents">
-                                <div class="contents_inner">
-                                  <p>asdasdasd</p>
-                                </div>
+                        <li className="articles_item">
+                        <article className="articles_contents">
+                          <div className="articles_body">
+                            <div className="contents">
+                              <div className="contents_inner">
+                                <AllDogs1 />
                               </div>
                             </div>
-                          </article>
-                        </li>
-                        <li class="articles_item">
-                            <article class="articles_contents">
-                              <div class="articles_header">
-                                <h1 class="articles_title">
-                                  <a href="/2017/11/20/develope/">adasdasd</a> </h1>
-                                  <div class="articles_meta">
-                                    <div class="meta">
-                                      <div class="meta_inner ellipsis">
-                                        <div class="meta_datetime">
-                                          <i class="fa fa-clock-o" aria-hidden="true">
-                                          </i>
-                                          <time datetime="2017-11-20">2017.11.20</time>
-
-                                      </div>
-                                      <div class="meta_categories">
-                                        <i class="fa fa-map-marker" aria-hidden="true">
-                                        </i>
-                                        <div class="meta_category-list">
-                                            <a href="#" class="meta_category-list-item">concept</a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="articles_body">
-                              <div class="contents">
-                                <div class="contents_inner">
-                                  <p>adfadsff</p>
-                                </div>
-                              </div>
-                            </div>
-                          </article>
-                        </li>
-                        <li class="articles_item">
-                          <article class="articles_contents">
-                            <div class="articles_header">
-                              <h1 class="articles_title">
-                                <a href="/2017/11/19/develope.discus/">Hasdfasd</a> </h1>
-
-                                <div class="articles_meta">
-                                  <div class="meta">
-                                    <div class="meta_inner ellipsis">
-                                      <div class="meta_datetime">
-                                        <i class="fa fa-clock-o" aria-hidden="true">
-                                        </i>
-                                        <time datetime="2017-07-12">2017.11.19</time>
-                                    </div>
-                                    <div class="meta_categories">
-                                      <i class="fa fa-map-marker" aria-hidden="true">
-                                      </i>
-                                      <div class="meta_category-list">
-                                          <a href="#" class="meta_category-list-item">component</a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
                           </div>
-                          <div class="articles_body">
-                            <div class="contents">
-                              <div class="contents_inner">
-
+                        </article>
+                        </li>
+                        <li className="articles_item">
+                        <article className="articles_contents">
+                          <div className="articles_body">
+                            <div className="contents">
+                              <div className="contents_inner">
+                                <AllDogs2 />
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        </li>
+                        <li className="articles_item">
+                        <article className="articles_contents">
+                          <div className="articles_body">
+                            <div className="contents">
+                              <div className="contents_inner">
+                                <AllDogs3 />
                               </div>
                             </div>
                           </div>
                         </article>
                       </li>
-                      </ul>
-                    </div>
-                  </div>
+                      <li className="articles_item">
+                      <article className="articles_contents">
+                        <div className="articles_body">
+                          <div className="contents">
+                            <div className="contents_inner">
+                              <AllDogs4 />
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li className="articles_item">
+                    <article className="articles_contents">
+                      <div className="articles_body">
+                        <div className="contents">
+                          <div className="contents_inner">
+                            <AllDogs5 />
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-
-    </div>
-    );
-  }
+      </div>
+   </div>
+ </div>
+);
+}
 }

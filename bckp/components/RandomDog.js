@@ -1,11 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import { fetchRandomDog } from '../actions/showAllDog'
+import { fetchRandomDog } from '../actions/randomDog'
 
-
-
-class AllDogs extends React.Component {
+class RandomDog extends React.Component {
   static propTypes = {
     fetchRandomDog: PropTypes.func.isRequired
   }
@@ -21,7 +19,8 @@ class AllDogs extends React.Component {
 
     return (
       <div>
-        <img className="doggy_picture" src= { randomDog }
+        <img className="doggy_picture"
+         src= {randomDog.url}
          alt="first_dog_picture" />
       </div>
     )
@@ -35,4 +34,4 @@ const mapStateToProps = function (state) {
   }
 }
 
-export default connect(mapStateToProps, { fetchRandomDog })(AllDogs)
+export default connect(mapStateToProps, { fetchRandomDog })(RandomDog)

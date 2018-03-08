@@ -1,6 +1,8 @@
 import request from 'superagent'
 
 
+
+
 export const minusOne = (userId) => {
   return (dispatch, getState) => {
     const { users } = getState()
