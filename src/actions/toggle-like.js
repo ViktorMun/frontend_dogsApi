@@ -10,7 +10,7 @@ const dogname=dog.url.split("/")[5];
 console.log(dogname)
   request
     .post(`${baseUrl}`)
-    .send({breed: dogname , userId: 5})
+    .send({breed: dogname , userId: 1})
     .then((response) => (dispatch) => {
       type: TOGGLE_LIKE
     })
